@@ -36,3 +36,5 @@
 1. Клонируйте репозиторий:
    ```bash
    git clone [https://github.com/carbarettor/VTagStats.git](https://github.com/carbarettor/VTagStats.git)
+
+⭐ Если проект вам пригодился, поставьте звездочку на GitHub! Это сильно помогает развитию.
