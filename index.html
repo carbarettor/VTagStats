@@ -65,9 +65,9 @@
         }
 
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 3rem 1rem;
+            padding: 2rem 1rem;
             text-align: center;
         }
 
@@ -91,7 +91,7 @@
             display: flex;
             gap: 1rem;
             justify-content: center;
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
             flex-wrap: wrap;
         }
 
@@ -125,12 +125,31 @@
             transform: translateY(-2px);
         }
 
+        /* Исправление отображения картинки */
+        .preview-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+            background-color: #111;
+        }
+
+        .preview-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain; /* Сохраняет оригинальные пропорции без растягивания */
+        }
+
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 1.5rem;
             text-align: left;
-            margin-top: 2rem;
+            margin-top: 1rem;
         }
 
         .feature-card {
@@ -175,18 +194,23 @@
             <a href="https://github.com/carbarettor/VTagStats" target="_blank" class="btn btn-secondary">Исходный код</a>
         </div>
 
+        <!-- Контейнер для скриншота приложения -->
+        <div class="preview-container">
+            <img src="app_preview.png" alt="VTagStats Interface">
+        </div>
+
         <div class="features">
             <div class="feature-card">
-                <h3>Быстрые модули</h3>
-                <p>Шпаргалки по популярным модулям `sys`, `random` и эффективному использованию `min()`.</p>
+                <h3>🚀 Быстрые модули</h3>
+                <p>Шпаргалки по популярным модулям sys, random и эффективному использованию min().</p>
             </div>
             <div class="feature-card">
-                <h3>Tkinter & GUI</h3>
-                <p>Готовые примеры верстки и интерфейсов на Tkinter для интеграции в свои проекты.</p>
+                <h3>🎨 Tkinter & GUI</h3>
+                <p>Готовые примеры верстки и элементов интерфейса для интеграции в свои проекты.</p>
             </div>
             <div class="feature-card">
-                <h3>Портативность</h3>
-                <p>Работает без установки. Запаковано в один автономный `.exe` файл через PyInstaller.</p>
+                <h3>📦 Портативность</h3>
+                <p>Работает без установки. Запаковано в один автономный .exe файл через PyInstaller.</p>
             </div>
         </div>
     </main>
