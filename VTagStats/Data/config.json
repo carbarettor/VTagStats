@@ -1,5 +1,6 @@
 {
     "ascii_art_path": "Data/description.txt",
-    "version": "2.2.1",
-    "author": ""
+    "version": "1.0.1",
+    "author": "",
+    "theme": "dark"
 }
